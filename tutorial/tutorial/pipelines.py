@@ -9,7 +9,16 @@
 # class TutorialPipeline(object):
 #     def process_item(self, item, spider):
 #         return item
-import scrapy
-from tutorial.items import DmozItem
+import codecs
+import json
+
+class TutorialPipline(object):
+    def __init__(self):
+        self.file=codecs.open('items','wb',encoding='utf-8')
+
+    def process_item(self,item,spider):
+        line=json.dumps(dict(item))
+        self.file.write(line.decode("unicode_escape")+"\r\n")
+        return item
 
 

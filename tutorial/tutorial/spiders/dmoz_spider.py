@@ -5,8 +5,9 @@
 # @Site    : 
 # @File    : dmoz_spider.py
 # @Software: PyCharm
-
-from scrapy.spider import Spider
+import sys
+sys.path.append('/home/gavin/PycharmProjects/scrapy/tutorial')
+from scrapy.spiders import Spider
 from scrapy.selector import Selector
 from tutorial.items import DmozItem
 
@@ -27,12 +28,15 @@ class DmozSpider(Spider):
         sel = Selector(response)
         print(sel)
         sites = sel.xpath('//div[@class="name"]/a')
-        page=sel.xpath('//div[@class="results"]')
         items = []
         for site in sites:
             item = DmozItem()
             item['title'] = site.xpath('text()').extract()
             item['link'] = site.xpath('@href').extract()
+            second_url = site.xpath('@href').extract()[0]
+
             # item['desc'] = site.xpath('text()').extract()
             items.append(item)
         return items
+
+
