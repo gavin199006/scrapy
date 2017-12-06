@@ -14,5 +14,8 @@ class DoubanItem(scrapy.Item):
     rate = scrapy.Field()
     autor = scrapy.Field()
     url=scrapy.Field()
-    # publishingHouse = scrapy.Field()
-    # publishingTime = scrapy.Field()
+
+
+    publishingHouse = scrapy.Field()
+    publishingTime = scrapy.Field()
+    price = scrapy.Field()
