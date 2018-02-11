@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="test@192.168.1.173 [2]">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1" name="test">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="INFORMATION_SCHEMA"/>
+    <schema id="4" parent="1" name="PERFORMANCE_SCHEMA"/>
+    <schema id="5" parent="1" name="db"/>
+    <schema id="6" parent="1" name="mysql"/>
+    <schema id="7" parent="1" name="temp"/>
+    <schema id="8" parent="1" name="tidb"/>
+    <table id="9" parent="2" name="exam"/>
+    <table id="10" parent="2" name="tmp_301_xinnei_exam_master">
+      <Comment>检查申请</Comment>
+    </table>
+    <table id="11" parent="2" name="tmp_301_xinnei_exam_master_copy">
+      <Comment>检查申请</Comment>
+    </table>
+    <table id="12" parent="2" name="tmp_301_xinnei_exam_report_copy">
+      <Comment>检查报告</Comment>
+    </table>
+    <column id="13" parent="9" name="patient_id">
+      <Position>1</Position>
+      <DataType>varchar(32)|0</DataType>
+    </column>
+    <column id="14" parent="9" name="visit_id">
+      <Position>2</Position>
+      <DataType>varchar(32)|0</DataType>
+    </column>
+    <column id="15" parent="9" name="description">
+      <Position>3</Position>
+      <Comment>检查所见</Comment>
+      <DataType>text|0</DataType>
+    </column>
+    <column id="16" parent="9" name="impression">
+      <Position>4</Position>
+      <Comment>印象</Comment>
+      <DataType>text|0</DataType>
+    </column>
+    <column id="17" parent="9" name="exam_para">
+      <Position>5</Position>
+      <Comment>检查参数</Comment>
+      <DataType>text|0</DataType>
+    </column>
+    <column id="18" parent="9" name="data_id">
+      <Position>6</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="19" parent="9" name="exam_item">
+      <Position>7</Position>
+      <Comment>检查项目</Comment>
+      <DataType>varchar(128)|0</DataType>
+    </column>
+    <column id="20" parent="9" name="req_date_time">
+      <Position>8</Position>
+      <Comment>申请时间</Comment>
+      <DataType>varchar(128)|0</DataType>
+    </column>
+    <column id="21" parent="9" name="exam_sub_class">
+      <Position>9</Position>
+      <Comment>检查子类型</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="22" parent="9" name="exam_no">
+      <Position>10</Position>
+      <Comment>检查单号</Comment>
+      <DataType>varchar(32)|0</DataType>
+    </column>
+    <column id="23" parent="10" name="PATIENT_ID">
+      <Position>1</Position>
+      <DataType>varchar(32)|0</DataType>
+    </column>
+    <column id="24" parent="10" name="NAME">
+      <Position>2</Position>
+      <DataType>varchar(128)|0</DataType>
+    </column>
+    <column id="25" parent="10" name="SEX">
+      <Position>3</Position>
+      <DataType>varchar(128)|0</DataType>
+    </column>
+    <column id="26" parent="10" name="VISIT_ID">
+      <Position>4</Position>
+      <DataType>varchar(32)|0</DataType>
+    </column>
+    <column id="27" parent="10" name="EXAM_NO">
+      <Position>5</Position>
+      <Comment>检查单号</Comment>
+      <DataType>varchar(32)|0</DataType>
+    </column>
+    <column id="28" parent="10" name="EXAM_CLASS">
+      <Position>6</Position>
+      <Comment>检查类型</Comment>
+      <DataType>varchar(128)|0</DataType>
+    </column>
+    <column id="29" parent="10" name="REQ_PHYSICIAN">
+      <Position>7</Position>
+      <Comment>申请医生</Comment>
+      <DataType>varchar(128)|0</DataType>
+    </column>
+    <column id="30" parent="10" name="REQ_DEPT">
+      <Position>8</Position>
+      <DataType>varchar(128)|0</DataType>
+    </column>
+    <column id="31" parent="10" name="REQ_DATE_TIME">
+      <Position>9</Position>
+      <Comment>申请时间</Comment>
+      <DataType>varchar(128)|0</DataType>
+    </column>
+    <column id="32" parent="10" name="REPORT_DATE_TIME">
+      <Position>10</Position>
+      <Comment>报告时间</Comment>
+      <DataType>varchar(32)|0</DataType>
+    </column>
+    <column id="33" parent="10" name="RESULT_STATUS">
+      <Position>11</Position>
+      <Comment>检查状态</Comment>
+      <DataType>varchar(128)|0</DataType>
+    </column>
+    <column id="34" parent="10" name="TECHNICIAN">
+      <Position>12</Position>
+      <Comment>操作医师</Comment>
+      <DataType>varchar(128)|0</DataType>
+    </column>
+    <column id="35" parent="10" name="SCHEDULED_DATE_TIME">
+      <Position>13</Position>
+      <Comment>预约时间</Comment>
+      <DataType>varchar(128)|0</DataType>
+    </column>
+    <column id="36" parent="10" name="EXAM_ITEM">
+      <Position>14</Position>
+      <Comment>检查项目</Comment>
+      <DataType>varchar(128)|0</DataType>
+    </column>
+    <column id="37" parent="10" name="EXAM_SUB_CLASS">
+      <Position>15</Position>
+      <Comment>检查子类型</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="38" parent="10" name="CLIN_DIAG">
+      <Position>16</Position>
+      <Comment>检查原因</Comment>
+      <DataType>varchar(2000)|0</DataType>
+    </column>
+    <column id="39" parent="10" name="EXAM_REASON">
+      <Position>17</Position>
+      <Comment>检查描述</Comment>
+      <DataType>varchar(2000)|0</DataType>
+    </column>
+    <column id="40" parent="11" name="PATIENT_ID">
+      <Position>1</Position>
+      <DataType>varchar(32)|0</DataType>
+    </column>
+    <column id="41" parent="11" name="NAME">
+      <Position>2</Position>
+      <DataType>varchar(128)|0</DataType>
+    </column>
+    <column id="42" parent="11" name="SEX">
+      <Position>3</Position>
+      <DataType>varchar(128)|0</DataType>
+    </column>
+    <column id="43" parent="11" name="VISIT_ID">
+      <Position>4</Position>
+      <DataType>varchar(32)|0</DataType>
+    </column>
+    <column id="44" parent="11" name="EXAM_NO">
+      <Position>5</Position>
+      <Comment>检查单号</Comment>
+      <DataType>varchar(32)|0</DataType>
+    </column>
+    <column id="45" parent="11" name="EXAM_CLASS">
+      <Position>6</Position>
+      <Comment>检查类型</Comment>
+      <DataType>varchar(128)|0</DataType>
+    </column>
+    <column id="46" parent="11" name="REQ_PHYSICIAN">
+      <Position>7</Position>
+      <Comment>申请医生</Comment>
+      <DataType>varchar(128)|0</DataType>
+    </column>
+    <column id="47" parent="11" name="REQ_DEPT">
+      <Position>8</Position>
+      <DataType>varchar(128)|0</DataType>
+    </column>
+    <column id="48" parent="11" name="REQ_DATE_TIME">
+      <Position>9</Position>
+      <Comment>申请时间</Comment>
+      <DataType>varchar(128)|0</DataType>
+    </column>
+    <column id="49" parent="11" name="REPORT_DATE_TIME">
+      <Position>10</Position>
+      <Comment>报告时间</Comment>
+      <DataType>varchar(32)|0</DataType>
+    </column>
+    <column id="50" parent="11" name="RESULT_STATUS">
+      <Position>11</Position>
+      <Comment>检查状态 1：收到申请(sdsq)，2：已执行(yzx)，3：初步报告(cbbg)，4：确认报告(qrbg)，9：其他(qt)</Comment>
+      <DataType>varchar(128)|0</DataType>
+    </column>
+    <column id="51" parent="11" name="TECHNICIAN">
+      <Position>12</Position>
+      <Comment>操作医师</Comment>
+      <DataType>varchar(128)|0</DataType>
+    </column>
+    <column id="52" parent="11" name="SCHEDULED_DATE_TIME">
+      <Position>13</Position>
+      <Comment>预约时间</Comment>
+      <DataType>varchar(128)|0</DataType>
+    </column>
+    <column id="53" parent="11" name="EXAM_ITEM">
+      <Position>14</Position>
+      <Comment>检查项目</Comment>
+      <DataType>varchar(128)|0</DataType>
+    </column>
+    <column id="54" parent="11" name="EXAM_SUB_CLASS">
+      <Position>15</Position>
+      <Comment>检查子类型</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="55" parent="11" name="CLIN_DIAG">
+      <Position>16</Position>
+      <Comment>检查原因</Comment>
+      <DataType>varchar(2000)|0</DataType>
+    </column>
+    <column id="56" parent="11" name="EXAM_REASON">
+      <Position>17</Position>
+      <Comment>检查描述</Comment>
+      <DataType>varchar(2000)|0</DataType>
+    </column>
+    <column id="57" parent="12" name="PATIENT_ID">
+      <Position>1</Position>
+      <DataType>varchar(32)|0</DataType>
+    </column>
+    <column id="58" parent="12" name="NAME">
+      <Position>2</Position>
+      <DataType>varchar(128)|0</DataType>
+    </column>
+    <column id="59" parent="12" name="SEX">
+      <Position>3</Position>
+      <DataType>varchar(128)|0</DataType>
+    </column>
+    <column id="60" parent="12" name="VISIT_ID">
+      <Position>4</Position>
+      <DataType>varchar(32)|0</DataType>
+    </column>
+    <column id="61" parent="12" name="EXAM_NO">
+      <Position>5</Position>
+      <Comment>检查单号</Comment>
+      <DataType>varchar(32)|0</DataType>
+    </column>
+    <column id="62" parent="12" name="IS_ABNORMAL">
+      <Position>6</Position>
+      <Comment>检查结论</Comment>
+      <DataType>varchar(128)|0</DataType>
+    </column>
+    <column id="63" parent="12" name="DESCRIPTION">
+      <Position>7</Position>
+      <Comment>检查所见</Comment>
+      <DataType>text|0</DataType>
+    </column>
+    <column id="64" parent="12" name="IMPRESSION">
+      <Position>8</Position>
+      <Comment>印象</Comment>
+      <DataType>text|0</DataType>
+    </column>
+    <column id="65" parent="12" name="RECOMMENDATION">
+      <Position>9</Position>
+      <Comment>建议</Comment>
+      <DataType>text|0</DataType>
+    </column>
+    <column id="66" parent="12" name="exam_para">
+      <Position>10</Position>
+      <Comment>检查参数</Comment>
+      <DataType>text|0</DataType>
+    </column>
+    <column id="67" parent="12" name="data_id">
+      <Position>11</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+  </database-model>
+</dataSource>

@@ -14,16 +14,11 @@ import json
 import pymysql
 
 
-
-
-
 class TutorialPipeline(object):
     def __init__(self):
-        # self.file=codecs.open('items','wb',encoding='utf-8')
         self.file=open('item','w',encoding='utf-8')
 
     def process_item(self,item,spider):
-        # print(item['title'])
         line=json.dumps(dict(item), ensure_ascii=False)
         # print(line)
         # self.file.write(line.decode("unicode_escape")+"\r\n")
