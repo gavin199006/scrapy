@@ -6,7 +6,9 @@
 # http://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
 from scrapy import signals
-
+import requests
+import random
+from scrapy import signals
 
 class TutorialSpiderMiddleware(object):
     # Not all methods need to be defined. If a method is not defined,
@@ -54,3 +56,20 @@ class TutorialSpiderMiddleware(object):
 
     def spider_opened(self, spider):
         spider.logger.info('Spider opened: %s' % spider.name)
+
+class ProxyMiddleware(object):
+    # overwrite process request
+
+    def process_request(self, request, spider):
+        proxy = requests.get("http://127.0.0.1:5555/random").content.decode()
+        # Set the location of the proxy
+        request.meta['proxy'] = proxy
+
+# class MyproxiesSpiderMiddleware(object):
+#     def __init__(self, ip=''):
+#         self.ip = ip
+#
+#     def process_request(self, request, spider):
+#         proxy = requests.get("http://127.0.0.1:5555/random").content.decode()
+#         print(proxy)
+#         request.meta["proxy"] = proxy
